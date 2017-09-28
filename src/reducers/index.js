@@ -1,15 +1,16 @@
-import { LOADING_MERCHANT_LIST, ADD_MERCHANTS_LIST } from '../actions/constants';
+import { LOADING_MERCHANT_LIST, RECEIVE_MERCHANTS_LIST } from '../actions/constants';
 
-const merchantsReducer = (state = {}, action) => {
+export const merchantsReducer = (state = {}, action) => {
   switch (action.type) {
     case LOADING_MERCHANT_LIST:
-      return {
+      return Object.assign({}, state, {
         loading: true
-      };
-    case ADD_MERCHANTS_LIST:
-      return {
-        loading: false
-      };
+      });
+    case RECEIVE_MERCHANTS_LIST:
+      return Object.assign({}, state, {
+        loading: false,
+        merchantsList: action.merchansList
+      });
     default:
       return state;
   }

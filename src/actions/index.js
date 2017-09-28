@@ -1,21 +1,22 @@
-import { ADD_MERCHANTS_LIST, LOADING_MERCHANT_LIST } from './constants';
+import { RECEIVE_MERCHANTS_LIST, LOADING_MERCHANT_LIST } from './constants';
+import { listOfMerchantsMock } from '../APIMock';
 
 const timeOutFetchSimulation = 2000;
 
-const fetchListOfMerchants = () => {
+export const fetchListOfMerchants = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve('data');
+      resolve(listOfMerchantsMock);
     }, timeOutFetchSimulation);
   });
 }
 
- const loadingListAction = () => ({
+export const loadingListAction = () => ({
   type: LOADING_MERCHANT_LIST
 });
 
-const receiveListAction = merchansList =>({
-  type: ADD_MERCHANTS_LIST,
+export const receiveListAction = merchansList =>({
+  type: RECEIVE_MERCHANTS_LIST,
   merchansList
 })
 

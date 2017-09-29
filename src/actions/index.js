@@ -13,25 +13,25 @@ export const fetchListOfMerchants = (pageSize, page) => {
 
     setTimeout(() => {
       const paginatedListOfMerchants = _.filter(listOfMerchantsMock, (item, index) => {
-        return index >= initOffset && index < endOffset
-      })
+        return index >= initOffset && index < endOffset;
+      });
       resolve(paginatedListOfMerchants);
     }, timeOutFetchSimulation);
   });
-}
+};
 
 export const loadingListAction = () => ({
   type: LOADING_MERCHANT_LIST
 });
 
-export const receiveListAction = merchansList =>({
+export const receiveListAction = merchansList => ({
   type: RECEIVE_MERCHANTS_LIST,
   merchansList
-})
+});
 
-export const fetchListOfMerchantsAction = (pageSize = 0, page=0 ) => (dispatch) => {
+export const fetchListOfMerchantsAction = (pageSize = 0, page = 0) => (dispatch) => {
   dispatch(loadingListAction());
   fetchListOfMerchants(pageSize, page).then((merchantsList) => {
-    dispatch(receiveListAction(merchantsList))
+    dispatch(receiveListAction(merchantsList));
   });
 };

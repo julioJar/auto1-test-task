@@ -1,521 +1,745 @@
+/* eslint-disable */
 export const listOfMerchantsMock = [
   {
-    "id": "59ce7211564df41c196a49bc",
-    "avatar_url": "http://i.pravatar.cc/500?u=59ce72118f3f90db8ac7a310",
-    "hasPremium": false,
-    "firstname": "Grant",
-    "lastname": "Curtis",
-    "email": "grantcurtis@jasper.com",
-    "phone": "+1 (858) 479-3302",
+    "id": "59ced4fc7cecb83394f5bffd",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fcf6988601e83f66d8",
+    "hasPremium": true,
+    "firstname": "Stein",
+    "lastname": "Nixon",
+    "email": "steinnixon@jasper.com",
+    "phone": "+1 (976) 539-3884",
     "bids": [
       {
-        "id": "59ce7211112969aa368dd788",
-        "carTitle": "BUICK",
-        "amount": 22398,
-        "created": "2014-06-14T12:10:09 +05:00"
+        "id": "59ced4fc4ee1b0c10311004f",
+        "carTitle": "MAYBACH",
+        "amount": 27557,
+        "created": "Tue Mar 28 2017 08:05:06 GMT-0500 (COT)"
       },
       {
-        "id": "59ce72110f89f74ed0907649",
-        "carTitle": "LOTUS",
-        "amount": 17717,
-        "created": "2016-05-04T07:57:18 +05:00"
+        "id": "59ced4fc3c527d39d0b7e0e6",
+        "carTitle": "VOLKS",
+        "amount": 10208,
+        "created": "Sun Jun 28 2015 06:39:32 GMT-0500 (COT)"
       },
       {
-        "id": "59ce7211e44a73b915241b4f",
-        "carTitle": "DELOREAN",
-        "amount": 44857,
-        "created": "2014-12-16T12:43:03 +05:00"
-      },
-      {
-        "id": "59ce72118897a28ff4369b7b",
-        "carTitle": "INFIN",
-        "amount": 26644,
-        "created": "2015-05-21T04:44:50 +05:00"
-      },
-      {
-        "id": "59ce7211cf67b9410ba10e90",
-        "carTitle": "SUZUKI",
-        "amount": 24558,
-        "created": "2014-06-20T04:28:20 +05:00"
-      },
-      {
-        "id": "59ce72113188e415c210bd3c",
-        "carTitle": "KIA",
-        "amount": 27937,
-        "created": "2015-12-15T09:48:11 +05:00"
-      },
-      {
-        "id": "59ce7211834531222e780503",
-        "carTitle": "AMGEN",
-        "amount": 22637,
-        "created": "2015-06-21T01:43:49 +05:00"
-      },
-      {
-        "id": "59ce7211e773288e786d1fd3",
-        "carTitle": "POR",
-        "amount": 9569,
-        "created": "2017-06-20T06:11:22 +05:00"
+        "id": "59ced4fc74524b955e065bd9",
+        "carTitle": "GMC",
+        "amount": 6817,
+        "created": "Sat Oct 01 2016 18:06:08 GMT-0500 (COT)"
       }
     ]
   },
   {
-    "id": "59ce7211457f9294ac124ee3",
-    "avatar_url": "http://i.pravatar.cc/500?u=59ce7211289dda506b2d292a",
+    "id": "59ced4fc3777107262413dbe",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fc0831e40854f97168",
     "hasPremium": false,
-    "firstname": "Compton",
-    "lastname": "Morrison",
-    "email": "comptonmorrison@jasper.com",
-    "phone": "+1 (914) 412-2035",
+    "firstname": "Margery",
+    "lastname": "Bullock",
+    "email": "margerybullock@jasper.com",
+    "phone": "+1 (827) 411-3683",
     "bids": [
       {
-        "id": "59ce7211a4f77990fd1754a7",
-        "carTitle": "KIA",
-        "amount": 20248,
-        "created": "2015-04-15T08:42:01 +05:00"
+        "id": "59ced4fc13dd165b29480e38",
+        "carTitle": "AUDI",
+        "amount": 20516,
+        "created": "Sat Jul 04 2015 16:30:32 GMT-0500 (COT)"
       },
       {
-        "id": "59ce72112f56bc76f977b751",
-        "carTitle": "FORD",
-        "amount": 21079,
-        "created": "2015-07-01T01:48:57 +05:00"
-      }
-    ]
-  },
-  {
-    "id": "59ce72111ac8fe02391b0d5b",
-    "avatar_url": "http://i.pravatar.cc/500?u=59ce7211185ae5c02aea713b",
-    "hasPremium": false,
-    "firstname": "Hale",
-    "lastname": "Huffman",
-    "email": "halehuffman@jasper.com",
-    "phone": "+1 (897) 410-2467",
-    "bids": [
-      {
-        "id": "59ce7211d7c18e059d77d059",
-        "carTitle": "CAD",
-        "amount": 23716,
-        "created": "2016-03-15T08:27:14 +05:00"
+        "id": "59ced4fcba05cb4629988132",
+        "carTitle": "GEO",
+        "amount": 41776,
+        "created": "Mon Mar 16 2015 01:42:22 GMT-0500 (COT)"
       },
       {
-        "id": "59ce721137a4178fa1b47a98",
-        "carTitle": "YUGO",
-        "amount": 16018,
-        "created": "2016-03-14T06:58:08 +05:00"
+        "id": "59ced4fc048fbefcec8f2b7b",
+        "carTitle": "MCLAREN",
+        "amount": 38607,
+        "created": "Mon Feb 22 2016 18:10:22 GMT-0500 (COT)"
       },
       {
-        "id": "59ce7211ce99bc004c634abb",
-        "carTitle": "SUB",
-        "amount": 6539,
-        "created": "2015-10-30T11:38:41 +05:00"
+        "id": "59ced4fc28ae0391db862005",
+        "carTitle": "LEXUS",
+        "amount": 4098,
+        "created": "Wed Jul 16 2014 10:32:59 GMT-0500 (COT)"
       },
       {
-        "id": "59ce7211c02c92a79f45a87e",
-        "carTitle": "AMGEN",
-        "amount": 12271,
-        "created": "2017-09-08T08:54:42 +05:00"
-      },
-      {
-        "id": "59ce72110090adebd605f528",
+        "id": "59ced4fcaab98c0a90b55b1e",
         "carTitle": "DAIHAT",
-        "amount": 46396,
-        "created": "2014-11-26T10:22:11 +05:00"
-      }
-    ]
-  },
-  {
-    "id": "59ce7211a63eab200cf3a407",
-    "avatar_url": "http://i.pravatar.cc/500?u=59ce7211d19fdea86554ef01",
-    "hasPremium": false,
-    "firstname": "Milagros",
-    "lastname": "Erickson",
-    "email": "milagroserickson@jasper.com",
-    "phone": "+1 (942) 497-3694",
-    "bids": [
-      {
-        "id": "59ce7211689d5ce258994aa4",
-        "carTitle": "MAS",
-        "amount": 2392,
-        "created": "2015-09-04T12:56:29 +05:00"
+        "amount": 45228,
+        "created": "Sat Jan 23 2016 22:01:25 GMT-0500 (COT)"
       },
       {
-        "id": "59ce7211495d47f854198f4a",
-        "carTitle": "HONDA",
-        "amount": 49997,
-        "created": "2015-02-20T02:03:40 +05:00"
-      },
-      {
-        "id": "59ce72112f5b9d8e5f2841f0",
-        "carTitle": "FORD",
-        "amount": 29704,
-        "created": "2016-10-24T09:03:10 +05:00"
-      },
-      {
-        "id": "59ce721198c64be16d418e75",
-        "carTitle": "DODGE",
-        "amount": 27729,
-        "created": "2014-11-22T05:41:53 +05:00"
-      },
-      {
-        "id": "59ce7211856641cdcd2b26e9",
-        "carTitle": "STERL",
-        "amount": 17933,
-        "created": "2014-04-25T11:04:36 +05:00"
-      },
-      {
-        "id": "59ce72117ca2b9c760966c78",
-        "carTitle": "STERL",
-        "amount": 47757,
-        "created": "2015-06-09T03:52:51 +05:00"
-      },
-      {
-        "id": "59ce721139dc5193e606e1ea",
-        "carTitle": "JAG",
-        "amount": 17621,
-        "created": "2017-03-07T03:51:06 +05:00"
-      },
-      {
-        "id": "59ce72117f6d9a4015d9a2c7",
-        "carTitle": "EAGLE",
-        "amount": 44753,
-        "created": "2016-01-10T08:21:18 +05:00"
-      },
-      {
-        "id": "59ce7211f250f1212b9f2c3e",
-        "carTitle": "KIA",
-        "amount": 49337,
-        "created": "2016-11-22T07:24:52 +05:00"
-      },
-      {
-        "id": "59ce72110adac26e2ab3bf5a",
-        "carTitle": "HYUND",
-        "amount": 43773,
-        "created": "2016-02-11T10:25:43 +05:00"
-      },
-      {
-        "id": "59ce7211ffed23fc36688b2c",
-        "carTitle": "ACURA",
-        "amount": 36309,
-        "created": "2016-10-07T05:10:58 +05:00"
-      },
-      {
-        "id": "59ce7211b4e0bb2b30cd0021",
-        "carTitle": "SUB",
-        "amount": 46041,
-        "created": "2015-04-18T07:39:43 +05:00"
-      }
-    ]
-  },
-  {
-    "id": "59ce72118949a156f7d8ff23",
-    "avatar_url": "http://i.pravatar.cc/500?u=59ce72119d6566e96df6e74f",
-    "hasPremium": true,
-    "firstname": "Janette",
-    "lastname": "Glenn",
-    "email": "janetteglenn@jasper.com",
-    "phone": "+1 (818) 598-2356",
-    "bids": [
-      {
-        "id": "59ce7211531f5e47f828a705",
-        "carTitle": "PEUG",
-        "amount": 39289,
-        "created": "2014-10-29T12:43:12 +05:00"
-      },
-      {
-        "id": "59ce7211c0d138e38f323b7c",
-        "carTitle": "SAAB",
-        "amount": 49053,
-        "created": "2015-08-04T03:11:42 +05:00"
-      },
-      {
-        "id": "59ce7211176cb766ffab514c",
-        "carTitle": "DODGE",
-        "amount": 46508,
-        "created": "2017-06-02T02:08:39 +05:00"
-      }
-    ]
-  },
-  {
-    "id": "59ce72116ac6868e9804ad99",
-    "avatar_url": "http://i.pravatar.cc/500?u=59ce7211c1f3ba9d05f08de7",
-    "hasPremium": true,
-    "firstname": "Melton",
-    "lastname": "Barnes",
-    "email": "meltonbarnes@jasper.com",
-    "phone": "+1 (926) 406-2454",
-    "bids": [
-      {
-        "id": "59ce72115c819a0af2533dcc",
-        "carTitle": "DAEW",
-        "amount": 23925,
-        "created": "2014-03-24T04:58:16 +05:00"
-      },
-      {
-        "id": "59ce72116e1b373dd0cabcb8",
-        "carTitle": "MINI",
-        "amount": 2947,
-        "created": "2016-03-26T08:12:58 +05:00"
-      },
-      {
-        "id": "59ce72114bcdd72ec6d40d68",
-        "carTitle": "PONT",
-        "amount": 14595,
-        "created": "2014-01-19T11:18:28 +05:00"
-      }
-    ]
-  },
-  {
-    "id": "59ce7211c1a7d80453d59247",
-    "avatar_url": "http://i.pravatar.cc/500?u=59ce7211cbad6f416028d8ba",
-    "hasPremium": true,
-    "firstname": "Guzman",
-    "lastname": "Rich",
-    "email": "guzmanrich@jasper.com",
-    "phone": "+1 (905) 600-2948",
-    "bids": [
-      {
-        "id": "59ce72112c142817aa0706c9",
-        "carTitle": "SRT",
-        "amount": 49398,
-        "created": "2016-06-26T10:46:59 +05:00"
-      },
-      {
-        "id": "59ce7211d0024349adf06409",
-        "carTitle": "DAEW",
-        "amount": 28599,
-        "created": "2014-02-05T12:11:55 +05:00"
-      },
-      {
-        "id": "59ce7211a47b8946256dba99",
-        "carTitle": "HONDA",
-        "amount": 27433,
-        "created": "2015-04-22T08:50:36 +05:00"
-      }
-    ]
-  },
-  {
-    "id": "59ce72118ef85e62547c0736",
-    "avatar_url": "http://i.pravatar.cc/500?u=59ce7211d4228697d32a208b",
-    "hasPremium": false,
-    "firstname": "Vonda",
-    "lastname": "Lowery",
-    "email": "vondalowery@jasper.com",
-    "phone": "+1 (970) 471-3984",
-    "bids": [
-      {
-        "id": "59ce721148dff42c7a5282e0",
-        "carTitle": "LOTUS",
-        "amount": 35070,
-        "created": "2016-11-05T02:29:19 +05:00"
-      },
-      {
-        "id": "59ce72112bbacfdee00d8c87",
-        "carTitle": "STERL",
-        "amount": 8752,
-        "created": "2015-05-28T03:48:51 +05:00"
-      },
-      {
-        "id": "59ce72119bbf16ae7e8dc34c",
-        "carTitle": "FORD",
-        "amount": 1034,
-        "created": "2015-04-03T06:05:06 +05:00"
-      }
-    ]
-  },
-  {
-    "id": "59ce72110093792df2ff2d50",
-    "avatar_url": "http://i.pravatar.cc/500?u=59ce7211462e66468b79b8c1",
-    "hasPremium": false,
-    "firstname": "Mueller",
-    "lastname": "Holcomb",
-    "email": "muellerholcomb@jasper.com",
-    "phone": "+1 (876) 476-3137",
-    "bids": [
-      {
-        "id": "59ce7211f073811915ea558c",
-        "carTitle": "STERL",
-        "amount": 21292,
-        "created": "2014-12-19T11:53:22 +05:00"
-      },
-      {
-        "id": "59ce72119e5c692b7617e2d9",
-        "carTitle": "FORD",
-        "amount": 27927,
-        "created": "2016-06-29T06:03:37 +05:00"
-      },
-      {
-        "id": "59ce72110cc9133882168665",
-        "carTitle": "LAN",
-        "amount": 14020,
-        "created": "2015-06-09T08:42:34 +05:00"
-      },
-      {
-        "id": "59ce72114ead7f76598bff50",
-        "carTitle": "TESLA",
-        "amount": 23081,
-        "created": "2015-10-16T04:12:01 +05:00"
-      },
-      {
-        "id": "59ce721121539a2c2ab9d8bf",
-        "carTitle": "SMART",
-        "amount": 33871,
-        "created": "2014-01-25T11:46:01 +05:00"
-      },
-      {
-        "id": "59ce7211c7adc1f1b9a1ef77",
-        "carTitle": "BMW",
-        "amount": 36680,
-        "created": "2014-09-21T02:13:44 +05:00"
-      },
-      {
-        "id": "59ce7211af566d0dd5dfce6e",
-        "carTitle": "ASTON",
-        "amount": 33708,
-        "created": "2017-04-11T04:25:21 +05:00"
-      }
-    ]
-  },
-  {
-    "id": "59ce72118787920df23a9ed6",
-    "avatar_url": "http://i.pravatar.cc/500?u=59ce721193de0f34a1082fe8",
-    "hasPremium": true,
-    "firstname": "Adams",
-    "lastname": "Moss",
-    "email": "adamsmoss@jasper.com",
-    "phone": "+1 (812) 566-3578",
-    "bids": []
-  },
-  {
-    "id": "59ce7211b3728796fa1b1944",
-    "avatar_url": "http://i.pravatar.cc/500?u=59ce72112dda5d01e00658c1",
-    "hasPremium": true,
-    "firstname": "Carolyn",
-    "lastname": "Garcia",
-    "email": "carolyngarcia@jasper.com",
-    "phone": "+1 (842) 500-3251",
-    "bids": []
-  },
-  {
-    "id": "59ce72111f3874e40a9557ce",
-    "avatar_url": "http://i.pravatar.cc/500?u=59ce7211e17f1636b6102fb3",
-    "hasPremium": true,
-    "firstname": "Kathy",
-    "lastname": "Alexander",
-    "email": "kathyalexander@jasper.com",
-    "phone": "+1 (820) 594-2266",
-    "bids": [
-      {
-        "id": "59ce7211e6e2e267821c1f13",
-        "carTitle": "KIA",
-        "amount": 4075,
-        "created": "2016-05-11T02:14:59 +05:00"
-      },
-      {
-        "id": "59ce7211573b718e81165fc0",
-        "carTitle": "BENTL",
-        "amount": 39273,
-        "created": "2017-04-15T07:06:48 +05:00"
-      },
-      {
-        "id": "59ce7211c82d2c196c919264",
+        "id": "59ced4fce2f5c7d5c71c8d04",
         "carTitle": "YUGO",
-        "amount": 41237,
-        "created": "2014-05-15T11:45:49 +05:00"
-      },
-      {
-        "id": "59ce72114dc8a1b3c2e51555",
-        "carTitle": "STERL",
-        "amount": 30594,
-        "created": "2017-06-25T08:13:19 +05:00"
-      },
-      {
-        "id": "59ce7211c7a0ade775a47dc8",
-        "carTitle": "DODGE",
-        "amount": 36212,
-        "created": "2014-02-14T11:02:32 +05:00"
-      },
-      {
-        "id": "59ce721114d337b4119cc794",
-        "carTitle": "TRI",
-        "amount": 40496,
-        "created": "2016-03-20T09:08:57 +05:00"
+        "amount": 41747,
+        "created": "Tue Aug 26 2014 18:19:23 GMT-0500 (COT)"
       }
     ]
   },
   {
-    "id": "59ce721152b5a70c213e1423",
-    "avatar_url": "http://i.pravatar.cc/500?u=59ce7211491fd34c3cf876a5",
+    "id": "59ced4fc33ee5d472e14e568",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fc3116bf8f11f1cd4a",
     "hasPremium": true,
-    "firstname": "Penelope",
-    "lastname": "Richmond",
-    "email": "peneloperichmond@jasper.com",
-    "phone": "+1 (933) 545-2792",
+    "firstname": "Flora",
+    "lastname": "Sheppard",
+    "email": "florasheppard@jasper.com",
+    "phone": "+1 (830) 491-3714",
     "bids": [
       {
-        "id": "59ce7211637897c6872d088d",
-        "carTitle": "OLDS",
-        "amount": 48179,
-        "created": "2015-05-09T07:00:46 +05:00"
-      },
+        "id": "59ced4fc75877336035d8b3b",
+        "carTitle": "SUB",
+        "amount": 21493,
+        "created": "Sun Nov 01 2015 02:33:59 GMT-0500 (COT)"
+      }
+    ]
+  },
+  {
+    "id": "59ced4fc4d194231b1478b4a",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fc14fb275d62f1dcdb",
+    "hasPremium": false,
+    "firstname": "Espinoza",
+    "lastname": "Soto",
+    "email": "espinozasoto@jasper.com",
+    "phone": "+1 (809) 558-3711",
+    "bids": [
       {
-        "id": "59ce7211c79979174c492bc7",
-        "carTitle": "BMW",
-        "amount": 41551,
-        "created": "2015-07-31T09:08:49 +05:00"
-      },
-      {
-        "id": "59ce72111b3f4131fdd18f58",
-        "carTitle": "FER",
-        "amount": 20965,
-        "created": "2014-10-14T09:06:56 +05:00"
-      },
-      {
-        "id": "59ce7211ed435f11c721fb8f",
+        "id": "59ced4fc55b286b8fd6953ea",
         "carTitle": "VOLVO",
-        "amount": 38596,
-        "created": "2014-05-13T02:55:19 +05:00"
+        "amount": 13028,
+        "created": "Tue Nov 17 2015 08:17:57 GMT-0500 (COT)"
       },
       {
-        "id": "59ce7211141e3d0810aeaa90",
-        "carTitle": "MINI",
-        "amount": 29502,
-        "created": "2017-09-14T09:24:50 +05:00"
+        "id": "59ced4fc51eb1dfc419e069c",
+        "carTitle": "VOLKS",
+        "amount": 49130,
+        "created": "Sat Jul 11 2015 01:26:38 GMT-0500 (COT)"
       },
       {
-        "id": "59ce72117a9ae8c189f0045d",
-        "carTitle": "CAD",
-        "amount": 45603,
-        "created": "2015-10-19T08:13:39 +05:00"
+        "id": "59ced4fce3d55b15af8349fc",
+        "carTitle": "REN",
+        "amount": 38583,
+        "created": "Fri Jun 06 2014 09:40:35 GMT-0500 (COT)"
       },
       {
-        "id": "59ce7211e73faf1f769228e5",
-        "carTitle": "SRT",
-        "amount": 17924,
-        "created": "2015-10-15T02:24:23 +05:00"
+        "id": "59ced4fc48f6a7b6b185c846",
+        "carTitle": "MERKUR",
+        "amount": 9025,
+        "created": "Fri Sep 01 2017 06:20:12 GMT-0500 (COT)"
       },
       {
-        "id": "59ce721150ce9792ed0bfecd",
-        "carTitle": "TESLA",
-        "amount": 42987,
-        "created": "2016-07-18T07:00:43 +05:00"
+        "id": "59ced4fcb26fd02a7d7e3c1d",
+        "carTitle": "CHEV",
+        "amount": 9542,
+        "created": "Thu Dec 31 2015 17:45:07 GMT-0500 (COT)"
       },
       {
-        "id": "59ce7211a50422afa1093603",
-        "carTitle": "SUZUKI",
-        "amount": 29156,
-        "created": "2017-03-13T09:01:56 +05:00"
+        "id": "59ced4fc47d0b6253642ef45",
+        "carTitle": "SCION",
+        "amount": 32356,
+        "created": "Fri Jun 19 2015 11:01:36 GMT-0500 (COT)"
       },
       {
-        "id": "59ce7211036e71728e728201",
-        "carTitle": "MAS",
-        "amount": 36603,
-        "created": "2015-10-12T04:38:58 +05:00"
+        "id": "59ced4fcaac1a243b8f0183c",
+        "carTitle": "AVANTI",
+        "amount": 43964,
+        "created": "Sun Aug 07 2016 04:31:47 GMT-0500 (COT)"
       },
       {
-        "id": "59ce7211fc18d097e6579159",
+        "id": "59ced4fc442a5ee08da101c5",
+        "carTitle": "HONDA",
+        "amount": 4132,
+        "created": "Sun Nov 06 2016 01:12:44 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc2d4f16601a50ddd2",
         "carTitle": "FER",
-        "amount": 22406,
-        "created": "2015-04-17T02:55:00 +05:00"
+        "amount": 42962,
+        "created": "Mon Jan 02 2017 07:01:15 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcc776e1d3d64e2989",
+        "carTitle": "MERC",
+        "amount": 21654,
+        "created": "Tue Mar 04 2014 01:44:22 GMT-0500 (COT)"
+      }
+    ]
+  },
+  {
+    "id": "59ced4fc8dc8c41e6629268b",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fcba661f3e996e5b2e",
+    "hasPremium": true,
+    "firstname": "Suzette",
+    "lastname": "William",
+    "email": "suzettewilliam@jasper.com",
+    "phone": "+1 (815) 482-3026",
+    "bids": [
+      {
+        "id": "59ced4fc75aeb5cdd7a30726",
+        "carTitle": "EAGLE",
+        "amount": 33445,
+        "created": "Thu Jan 02 2014 16:17:12 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc31d317296b074ee8",
+        "carTitle": "MAZDA",
+        "amount": 34634,
+        "created": "Sun Sep 11 2016 05:30:26 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc470fab8f81348ef7",
+        "carTitle": "LOTUS",
+        "amount": 12698,
+        "created": "Thu Jun 04 2015 04:10:07 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcca7f387969250cee",
+        "carTitle": "SRT",
+        "amount": 11326,
+        "created": "Sat May 16 2015 12:03:39 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fce629b0dc579f6227",
+        "carTitle": "MERC",
+        "amount": 22518,
+        "created": "Thu Nov 06 2014 17:50:06 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc0c76c8b019e11be5",
+        "carTitle": "NISSAN",
+        "amount": 39128,
+        "created": "Fri May 09 2014 23:33:58 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcca0f49f6b5420fa2",
+        "carTitle": "CHEV",
+        "amount": 38516,
+        "created": "Sun Jan 11 2015 04:46:08 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcdaeb59550636ee8a",
+        "carTitle": "AUDI",
+        "amount": 27632,
+        "created": "Sat Nov 07 2015 11:27:47 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc6d3045544999b826",
+        "carTitle": "AMC",
+        "amount": 15393,
+        "created": "Thu Nov 03 2016 15:16:46 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc2e198cba650efe9e",
+        "carTitle": "AMC",
+        "amount": 42809,
+        "created": "Mon Oct 13 2014 13:03:33 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc9bc98a59cd72a562",
+        "carTitle": "AMGEN",
+        "amount": 13547,
+        "created": "Wed Sep 06 2017 20:16:59 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc5f77bbe89c841c23",
+        "carTitle": "ASTON",
+        "amount": 16445,
+        "created": "Sun Aug 24 2014 19:48:29 GMT-0500 (COT)"
+      }
+    ]
+  },
+  {
+    "id": "59ced4fcaf9ccf079723af06",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fc5218be08cedeca5d",
+    "hasPremium": false,
+    "firstname": "Wagner",
+    "lastname": "Coleman",
+    "email": "wagnercoleman@jasper.com",
+    "phone": "+1 (962) 422-2727",
+    "bids": [
+      {
+        "id": "59ced4fcd1118c3b843f3391",
+        "carTitle": "DATSUN",
+        "amount": 39901,
+        "created": "Wed Jun 10 2015 01:38:04 GMT-0500 (COT)"
+      }
+    ]
+  },
+  {
+    "id": "59ced4fcb23ee4130efb2719",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fc3198cb2a6c521cc3",
+    "hasPremium": true,
+    "firstname": "Dodson",
+    "lastname": "Joyce",
+    "email": "dodsonjoyce@jasper.com",
+    "phone": "+1 (875) 407-3366",
+    "bids": [
+      {
+        "id": "59ced4fc32be30aff25db635",
+        "carTitle": "SATURN",
+        "amount": 37312,
+        "created": "Thu Jan 22 2015 02:48:17 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc40fa6ca0a7c390ed",
+        "carTitle": "EAGLE",
+        "amount": 46997,
+        "created": "Thu Jan 09 2014 10:07:40 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc95e5ee30c926a914",
+        "carTitle": "CAD",
+        "amount": 45626,
+        "created": "Fri Dec 04 2015 13:40:55 GMT-0500 (COT)"
+      }
+    ]
+  },
+  {
+    "id": "59ced4fc3793a135984bf572",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fcc940e6e05f62dc76",
+    "hasPremium": false,
+    "firstname": "Morgan",
+    "lastname": "Berg",
+    "email": "morganberg@jasper.com",
+    "phone": "+1 (996) 426-2372",
+    "bids": [
+      {
+        "id": "59ced4fc3b35a270ebe328b0",
+        "carTitle": "DELOREAN",
+        "amount": 24200,
+        "created": "Sat Apr 30 2016 23:58:53 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fce7b225588693da2f",
+        "carTitle": "SRT",
+        "amount": 35594,
+        "created": "Thu Dec 03 2015 17:04:33 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc904585f948cf37b3",
+        "carTitle": "JEEP",
+        "amount": 11040,
+        "created": "Tue Jan 10 2017 13:59:28 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcd01214a18983b9fe",
+        "carTitle": "BENTL",
+        "amount": 43777,
+        "created": "Wed Jan 04 2017 18:08:27 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fced90cd774275ef6a",
+        "carTitle": "LOTUS",
+        "amount": 38655,
+        "created": "Thu Aug 18 2016 06:16:37 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcc013317b53304e1b",
+        "carTitle": "PONT",
+        "amount": 48473,
+        "created": "Sat Jul 30 2016 02:04:49 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc490d7c1db0dc0530",
+        "carTitle": "SMART",
+        "amount": 40426,
+        "created": "Thu Mar 19 2015 21:51:37 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcfd28d0ae29fdbfc8",
+        "carTitle": "DAEW",
+        "amount": 32640,
+        "created": "Tue Nov 04 2014 10:54:08 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fca875310cc715ba41",
+        "carTitle": "MERC",
+        "amount": 40754,
+        "created": "Tue Feb 25 2014 19:52:37 GMT-0500 (COT)"
+      }
+    ]
+  },
+  {
+    "id": "59ced4fc2bea067a94127cc6",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fcd1c36fdf2db69e9f",
+    "hasPremium": true,
+    "firstname": "Magdalena",
+    "lastname": "Rivers",
+    "email": "magdalenarivers@jasper.com",
+    "phone": "+1 (955) 497-2835",
+    "bids": [
+      {
+        "id": "59ced4fc76614aec89a9c1bd",
+        "carTitle": "CHRY",
+        "amount": 38498,
+        "created": "Tue Sep 13 2016 21:13:55 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc4823528afe88f5e4",
+        "carTitle": "LEXUS",
+        "amount": 43235,
+        "created": "Wed Mar 29 2017 20:25:13 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcb84225c16200ce96",
+        "carTitle": "MIT",
+        "amount": 4332,
+        "created": "Mon Aug 07 2017 21:12:13 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc08351a9d5079c499",
+        "carTitle": "RAM",
+        "amount": 32171,
+        "created": "Thu Jan 12 2017 16:09:59 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc99bb1bca2336d337",
+        "carTitle": "INFIN",
+        "amount": 36019,
+        "created": "Mon Sep 01 2014 07:32:25 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcf532e127d3d917c4",
+        "carTitle": "JEEP",
+        "amount": 18199,
+        "created": "Wed Oct 12 2016 06:07:10 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc2d98fe4eab515952",
+        "carTitle": "SCION",
+        "amount": 8664,
+        "created": "Mon Apr 27 2015 18:42:00 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc08253acecc472db6",
+        "carTitle": "SCION",
+        "amount": 41763,
+        "created": "Sun Aug 24 2014 12:54:51 GMT-0500 (COT)"
+      }
+    ]
+  },
+  {
+    "id": "59ced4fc61483960e37ae024",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fc7567aaf74591e2a6",
+    "hasPremium": true,
+    "firstname": "Campos",
+    "lastname": "Rocha",
+    "email": "camposrocha@jasper.com",
+    "phone": "+1 (890) 456-3225",
+    "bids": [
+      {
+        "id": "59ced4fc78960032350c0ed9",
+        "carTitle": "CHRY",
+        "amount": 42008,
+        "created": "Sat Nov 12 2016 02:18:09 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc6fc5fc5164b168ef",
+        "carTitle": "ALFA",
+        "amount": 24449,
+        "created": "Thu Jul 20 2017 21:51:45 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcea2f24c8fc13a8a7",
+        "carTitle": "MAYBACH",
+        "amount": 42628,
+        "created": "Sun Jan 22 2017 15:23:38 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc8322e0a3400cdb4c",
+        "carTitle": "LOTUS",
+        "amount": 44755,
+        "created": "Wed Jan 13 2016 12:17:16 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcbd71f2052247ca6f",
+        "carTitle": "ACURA",
+        "amount": 35319,
+        "created": "Tue Sep 08 2015 06:46:14 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcaa7ddab92d75c480",
+        "carTitle": "MINI",
+        "amount": 42397,
+        "created": "Sun Jul 30 2017 02:57:20 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcf5277662bd334e2d",
+        "carTitle": "JAG",
+        "amount": 15155,
+        "created": "Mon Jun 16 2014 02:48:47 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc0c46184f7feb75b6",
+        "carTitle": "VOLKS",
+        "amount": 37148,
+        "created": "Fri Jul 29 2016 12:25:22 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc73a9a58cc16d17b1",
+        "carTitle": "DELOREAN",
+        "amount": 7510,
+        "created": "Thu Dec 01 2016 20:23:14 GMT-0500 (COT)"
+      }
+    ]
+  },
+  {
+    "id": "59ced4fcd44e640795d7f0db",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fcb914a222d384543b",
+    "hasPremium": false,
+    "firstname": "Agnes",
+    "lastname": "Fischer",
+    "email": "agnesfischer@jasper.com",
+    "phone": "+1 (847) 509-2143",
+    "bids": [
+      {
+        "id": "59ced4fc5a7197b94eb52593",
+        "carTitle": "GEO",
+        "amount": 37319,
+        "created": "Fri Jul 04 2014 10:42:42 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc742f9095adbc8523",
+        "carTitle": "BMW",
+        "amount": 31773,
+        "created": "Sun Jul 05 2015 09:46:41 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcaadae3369dfb469a",
+        "carTitle": "ISU",
+        "amount": 40615,
+        "created": "Fri Feb 28 2014 02:07:08 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc7043ae071c12fd07",
+        "carTitle": "MINI",
+        "amount": 38147,
+        "created": "Tue Nov 01 2016 18:47:27 GMT-0500 (COT)"
+      }
+    ]
+  },
+  {
+    "id": "59ced4fc002fda56ab09cc84",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fc0b15ffcfd80cc5d3",
+    "hasPremium": true,
+    "firstname": "Veronica",
+    "lastname": "Sparks",
+    "email": "veronicasparks@jasper.com",
+    "phone": "+1 (824) 484-2074",
+    "bids": [
+      {
+        "id": "59ced4fcbb42fc0f31b69271",
+        "carTitle": "MAZDA",
+        "amount": 45698,
+        "created": "Mon Dec 01 2014 07:05:27 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fca0f6bf271765275e",
+        "carTitle": "AMGEN",
+        "amount": 40038,
+        "created": "Sat Dec 17 2016 03:58:26 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc117fc231aabe0188",
+        "carTitle": "MERC",
+        "amount": 18716,
+        "created": "Thu Mar 13 2014 02:25:53 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc96c8b3c6820d3e38",
+        "carTitle": "LOTUS",
+        "amount": 18418,
+        "created": "Sat May 09 2015 02:11:39 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc9654eb0d9577a287",
+        "carTitle": "DELOREAN",
+        "amount": 13135,
+        "created": "Thu Jul 07 2016 01:51:38 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc8721f9ca466cddf3",
+        "carTitle": "FIAT",
+        "amount": 43900,
+        "created": "Sat May 02 2015 18:01:02 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc32d567c9289843f1",
+        "carTitle": "YUGO",
+        "amount": 42843,
+        "created": "Tue Jan 10 2017 02:44:55 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc52ff16f88bb1f7c0",
+        "carTitle": "PONT",
+        "amount": 43159,
+        "created": "Mon Apr 13 2015 17:36:33 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc96d4d3224f880e52",
+        "carTitle": "HONDA",
+        "amount": 6245,
+        "created": "Sat Jun 10 2017 09:00:39 GMT-0500 (COT)"
+      }
+    ]
+  },
+  {
+    "id": "59ced4fc71c870440586cd9a",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fcc9ae25a55de47c4d",
+    "hasPremium": false,
+    "firstname": "Buchanan",
+    "lastname": "Erickson",
+    "email": "buchananerickson@jasper.com",
+    "phone": "+1 (874) 443-3388",
+    "bids": [
+      {
+        "id": "59ced4fcce8918e6374aea95",
+        "carTitle": "HYUND",
+        "amount": 6184,
+        "created": "Mon Jun 15 2015 18:01:44 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc578e9bb12ffa3867",
+        "carTitle": "PONT",
+        "amount": 21654,
+        "created": "Sun Dec 04 2016 13:02:16 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc485c395570b00260",
+        "carTitle": "YUGO",
+        "amount": 5575,
+        "created": "Tue Aug 19 2014 14:45:44 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc5153c654a4bd5794",
+        "carTitle": "STERL",
+        "amount": 15725,
+        "created": "Sun Mar 02 2014 03:26:55 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc5ba7208a4049f633",
+        "carTitle": "AVANTI",
+        "amount": 11933,
+        "created": "Mon Sep 14 2015 00:34:59 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc8bb6e965ad39e1b5",
+        "carTitle": "LOTUS",
+        "amount": 26245,
+        "created": "Fri Sep 19 2014 19:07:24 GMT-0500 (COT)"
+      }
+    ]
+  },
+  {
+    "id": "59ced4fcc49d2033657da260",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fc4ae08c92a7b3a58a",
+    "hasPremium": false,
+    "firstname": "Jeanne",
+    "lastname": "Francis",
+    "email": "jeannefrancis@jasper.com",
+    "phone": "+1 (968) 415-2030",
+    "bids": [
+      {
+        "id": "59ced4fcd76d6edd5589fadd",
+        "carTitle": "MAZDA",
+        "amount": 42158,
+        "created": "Tue May 09 2017 08:48:39 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc26a4f6aacfd99d76",
+        "carTitle": "MERKUR",
+        "amount": 7812,
+        "created": "Tue Nov 17 2015 16:09:21 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fce4464ea503ac085f",
+        "carTitle": "FISK",
+        "amount": 9201,
+        "created": "Tue Jan 17 2017 08:08:18 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc290a60eff5d91634",
+        "carTitle": "MIT",
+        "amount": 21161,
+        "created": "Sun Apr 06 2014 16:26:33 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fca146f6851ab5469c",
+        "carTitle": "RR",
+        "amount": 39572,
+        "created": "Mon Jul 11 2016 21:49:48 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fcaf44c912e5001544",
+        "carTitle": "VOLKS",
+        "amount": 27143,
+        "created": "Tue Dec 27 2016 12:13:05 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fce899ea541a4e3092",
+        "carTitle": "TESLA",
+        "amount": 29876,
+        "created": "Tue Jul 08 2014 00:29:51 GMT-0500 (COT)"
+      }
+    ]
+  },
+  {
+    "id": "59ced4fc4d86762a65917e15",
+    "avatar_url": "http://i.pravatar.cc/500?u=59ced4fc1fd4e01352e2aaf0",
+    "hasPremium": true,
+    "firstname": "Pamela",
+    "lastname": "Oconnor",
+    "email": "pamelaoconnor@jasper.com",
+    "phone": "+1 (837) 547-2987",
+    "bids": [
+      {
+        "id": "59ced4fc315fcdc475767c75",
+        "carTitle": "EAGLE",
+        "amount": 20788,
+        "created": "Tue May 31 2016 12:55:54 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc24be344f6d9f1352",
+        "carTitle": "ASTON",
+        "amount": 39490,
+        "created": "Sun Nov 02 2014 08:59:33 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc44d5f115d97633ac",
+        "carTitle": "CHEV",
+        "amount": 25424,
+        "created": "Thu May 26 2016 19:39:26 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc6e1b208ef32eece9",
+        "carTitle": "RAM",
+        "amount": 29094,
+        "created": "Mon Sep 12 2016 04:55:44 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc4929eb5b3707e479",
+        "carTitle": "ISU",
+        "amount": 43962,
+        "created": "Mon Jun 23 2014 19:55:27 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc44fef0ee1fdf70dd",
+        "carTitle": "AMC",
+        "amount": 24490,
+        "created": "Wed Aug 05 2015 23:48:32 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc776b8b8789180077",
+        "carTitle": "ISU",
+        "amount": 46492,
+        "created": "Mon Aug 04 2014 23:49:01 GMT-0500 (COT)"
+      },
+      {
+        "id": "59ced4fc08bbb4d6106f2055",
+        "carTitle": "SAAB",
+        "amount": 8119,
+        "created": "Tue May 26 2015 23:58:51 GMT-0500 (COT)"
       }
     ]
   }
 ];
+/* eslint-enable */

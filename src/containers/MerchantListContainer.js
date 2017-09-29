@@ -1,6 +1,8 @@
+/* eslint radix: ["error", "as-needed"] */
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import _ from 'lodash';
 
 import { fetchListOfMerchantsAction } from '../actions';
@@ -24,7 +26,6 @@ class MerchantListContainer extends Component {
     if (page !== nextPage) {
       dispatchFetchListOfMerchantsAction(pageSize, nextPage);
     }
-
   }
 
   _renderListOfMerchants(merchantsListData) {
@@ -32,15 +33,16 @@ class MerchantListContainer extends Component {
       return (
         <MerchantItemContainer key={ merchantItem.id } merchantItem={ merchantItem } />
       );
-    })
+    });
   }
 
   render() {
     const { merchantsList, loading } = this.props;
-    console.log(this.props);
 
     if (loading) {
-      return <img className='loader' alt='loading gif' src={ loader }/>
+      return (
+        <img className='loader' alt='loading gif' src={ loader } />
+      );
     }
     return (
       <ul className="merchants_list">
@@ -50,21 +52,33 @@ class MerchantListContainer extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   const merchantsList = _.get(state.merchantsList, 'list', []);
-  const page = _.get(state.routing, 'locationBeforeTransitions.query.page', 1);
+  const page = parseInt(_.get(state.routing, 'locationBeforeTransitions.query.page', 1));
 
   return {
     loading: state.merchantsList.loading,
     page,
     merchantsList
-  }
+  };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
     dispatchFetchListOfMerchantsAction: fetchListOfMerchantsAction
   }, dispatch);
+};
+
+MerchantListContainer.defaultProps = {
+  page: 0,
+  merchantsList: []
+};
+
+MerchantListContainer.propTypes = {
+  dispatchFetchListOfMerchantsAction: PropTypes.func.isRequired,
+  page: PropTypes.number,
+  merchantsList: PropTypes.arrayOf(PropTypes.any),
+  loading: PropTypes.bool.isRequired
 };
 
 export default connect(

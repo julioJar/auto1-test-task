@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 import logo from '../assets/logo.png';
 import '../css/App.css';
 
@@ -15,5 +17,9 @@ class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  children: PropTypes.objectOf(PropTypes.any).isRequired
+};
 
 export default App;

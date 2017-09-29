@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import moment from 'moment';
 
 class MerchantItem extends Component {
   _renderListOfBids(bids) {
@@ -12,11 +14,11 @@ class MerchantItem extends Component {
             { bid.amount }
           </div>
           <div className='cell'>
-            { bid.created }
+            { moment(new Date(bid.created)).format('MMM Do YY') }
           </div>
         </div>
       );
-    })
+    });
   }
 
   render() {
@@ -60,5 +62,10 @@ class MerchantItem extends Component {
     );
   }
 }
+
+MerchantItem.propTypes = {
+  merchantItem: PropTypes.objectOf(PropTypes.any).isRequired,
+  editAction: PropTypes.func.isRequired
+};
 
 export default MerchantItem;

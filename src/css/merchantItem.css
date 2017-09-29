@@ -1,0 +1,22 @@
+.merchant_item {
+  display: flex;
+}
+
+.merchant_item_image {
+  border-radius: 50%;
+  max-width: 120px;
+  max-height: 120px;
+  margin-right: 20px;
+}
+
+.merchant_item_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.merchant_item_info h3 {
+  font-size: 2.5em;
+  line-height: 1;
+  margin: 5px 0;
+}

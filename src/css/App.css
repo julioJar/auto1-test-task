@@ -1,3 +1,6 @@
+@import url("merchantItem.css");
+@import url("bids.css");
+
 .App {
   text-align: center;
   font-family: 'Montserrat', sans-serif;

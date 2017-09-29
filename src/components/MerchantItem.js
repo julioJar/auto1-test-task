@@ -20,8 +20,9 @@ class MerchantItem extends Component {
   }
 
   render() {
-    const { merchantItem } = this.props;
+    const { merchantItem, editAction } = this.props;
     const {
+      id,
       avatar_url,
       firstname,
       lastname,
@@ -39,6 +40,7 @@ class MerchantItem extends Component {
             <a>{ email }</a>
             <a>{ phone }</a>
           </div>
+          <button onClick={() => editAction(id)}  className='edit_btn'>Edit</button>
         </div>
         <div className='table'>
           <div className='row header'>

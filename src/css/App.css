@@ -1,5 +1,7 @@
 @import url("merchantItem.css");
+@import url("merchantsList.css");
 @import url("bids.css");
+@import url('buttons.css');
 
 .App {
   text-align: center;
@@ -24,6 +26,11 @@
 
 .App-intro {
   font-size: large;
+}
+
+.loader {
+  max-width: 40px;
+  margin: 30px auto;
 }
 
 @keyframes App-logo-appearance {

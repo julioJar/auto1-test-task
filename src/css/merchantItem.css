@@ -1,5 +1,8 @@
 .merchant_item {
   display: flex;
+  margin: 20px 0;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .merchant_item_image {
@@ -19,4 +22,8 @@
   font-size: 2.5em;
   line-height: 1;
   margin: 5px 0;
+}
+
+.merchant_item .edit_btn {
+  margin-left: auto;
 }

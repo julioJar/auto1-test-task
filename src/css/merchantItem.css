@@ -1,3 +1,19 @@
+
+.merchant_item_wrapper {
+  border-radius: 10px;
+  padding: 20px;
+  /* Background Gradient for Complementary Colors */
+  background-color: #FFFFFF;
+  /* For WebKit (Safari, Chrome, etc) */
+  background: #FFFFFF -webkit-gradient(linear, left top, left bottom, from(#E2E3E5), to(#FFFFFF)) no-repeat;
+  /* Mozilla,Firefox/Gecko */
+  background: #FFFFFF -moz-linear-gradient(top, #E2E3E5, #FFFFFF) no-repeat;
+  /* IE 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E2E3E5, endColorstr=#FFFFFF) no-repeat;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E2E3E5, endColorstr=#E2E3E5)" no-repeat;
+}
+
 .merchant_item {
   display: flex;
   margin: 20px 0;
@@ -26,4 +42,17 @@
 
 .merchant_item .edit_btn {
   margin-left: auto;
+}
+
+.hasPremium {
+  /* Background Gradient for Complementary Colors */
+  background-color: #FFFFFF;
+  /* For WebKit (Safari, Chrome, etc) */
+  background: #FFFFFF -webkit-gradient(linear, left top, left bottom, from(#fff1a4), to(#FFFFFF)) no-repeat;
+  /* Mozilla,Firefox/Gecko */
+  background: #FFFFFF -moz-linear-gradient(top, #fff1a4, #FFFFFF) no-repeat;
+  /* IE 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fff1a4, endColorstr=#FFFFFF) no-repeat;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#fff1a4, endColorstr=#E2E3E5)" no-repeat;
 }

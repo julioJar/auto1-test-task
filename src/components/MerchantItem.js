@@ -27,14 +27,18 @@ class MerchantItem extends Component {
       id,
       avatar_url,
       firstname,
+      hasPremium,
       lastname,
       email,
       phone,
       bids
     } = merchantItem;
 
+    const wrapperContainerClasses = hasPremium ? 'merchant_item_wrapper hasPremium' : 'merchant_item_wrapper';
+
     return (
-      <li>
+      <li className={ wrapperContainerClasses }>
+        { hasPremium }
         <div className='merchant_item'>
           <img className='merchant_item_image' alt='avatar' src={ avatar_url } />
           <div className='merchant_item_info'>
@@ -65,7 +69,7 @@ class MerchantItem extends Component {
 
 MerchantItem.propTypes = {
   merchantItem: PropTypes.objectOf(PropTypes.any).isRequired,
-  editAction: PropTypes.func.isRequired
+  editAction: PropTypes.func.isRequired,
 };
 
 export default MerchantItem;

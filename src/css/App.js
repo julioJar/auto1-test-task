@@ -31,5 +31,12 @@ export default StyleSheet.create({
     },
     "App-intro": {
         "fontSize": "large"
+    },
+    "loader": {
+        "maxWidth": 40,
+        "marginTop": 30,
+        "marginRight": "auto",
+        "marginBottom": 30,
+        "marginLeft": "auto"
     }
 });

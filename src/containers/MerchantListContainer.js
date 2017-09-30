@@ -4,10 +4,12 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
+import { hashHistory } from 'react-router';
 
 import { fetchListOfMerchantsAction } from '../actions';
 import MerchantItemContainer from './MerchantItemContainer';
 import loader from '../assets/loader.gif';
+import Pagination from '../components/Pagination';
 
 const pageSize = 3;
 
@@ -36,8 +38,12 @@ class MerchantListContainer extends Component {
     });
   }
 
+  _paginationAction = (page) => {
+    hashHistory.push(`/list?page=${page}`);
+  };
+
   render() {
-    const { merchantsList, loading } = this.props;
+    const { merchantsList, loading, listLength, page } = this.props;
 
     if (loading) {
       return (
@@ -47,6 +53,12 @@ class MerchantListContainer extends Component {
     return (
       <ul className="merchants_list">
         { this._renderListOfMerchants(merchantsList) }
+        <Pagination
+          pageSize={ pageSize }
+          listLength={ listLength }
+          page={ page }
+          paginationAction={ this._paginationAction }
+        />
       </ul>
     );
   }
@@ -59,7 +71,8 @@ const mapStateToProps = (state) => {
   return {
     loading: state.merchantsList.loading,
     page,
-    merchantsList
+    merchantsList,
+    listLength: state.merchantsList.listLength
   };
 };
 
@@ -78,7 +91,8 @@ MerchantListContainer.propTypes = {
   dispatchFetchListOfMerchantsAction: PropTypes.func.isRequired,
   page: PropTypes.number,
   merchantsList: PropTypes.arrayOf(PropTypes.any),
-  loading: PropTypes.bool.isRequired
+  loading: PropTypes.bool.isRequired,
+  listLength: PropTypes.number.isRequired
 };
 
 export default connect(

@@ -1,13 +1,13 @@
 import { loadingListAction, receiveListAction } from '../../actions';
 import { listOfMerchantsMock } from '../../APIMock';
-import { merchantsReducer } from '../../reducers';
+import merchantsListReducer from '../../reducers/merchantsListReducer';
 
-describe('reducer for list of merchants',() => {
+describe('reducer for list of merchants', () => {
   test('Request for receive merchants list', () => {
     const expectedResult = {
       loading: true
     };
-    expect(merchantsReducer({}, loadingListAction())).toEqual(expectedResult);
+    expect(merchantsListReducer({}, loadingListAction())).toEqual(expectedResult);
   });
 
   test('Merchant list arrive successfuly', () => {
@@ -15,6 +15,6 @@ describe('reducer for list of merchants',() => {
       loading: false,
       merchantsList: listOfMerchantsMock
     };
-    expect(merchantsReducer({}, receiveListAction(listOfMerchantsMock))).toEqual(expectedResult);
+    expect(merchantsListReducer({}, receiveListAction(listOfMerchantsMock))).toEqual(expectedResult);
   });
 });

@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 
+import currencyFormatter from '../utils/currencyFormatter';
+
 class MerchantItem extends Component {
   _renderListOfBids(bids) {
-    return bids.map((bid) => {
+    return bids && _.map(bids, (bid) => {
       return (
         <div key={ bid.id } className='row'>
           <div className='cell'>
             { bid.carTitle }
           </div>
           <div className='cell'>
-            { bid.amount }
+            { currencyFormatter(bid.amount) }
           </div>
           <div className='cell'>
             { moment(new Date(bid.created)).format('MMM Do YY') }

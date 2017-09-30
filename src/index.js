@@ -9,7 +9,7 @@ import App from './containers/App';
 import configureStore from './store';
 import registerServiceWorker from './utils/registerServiceWorker';
 import MerchantListContainer from './containers/MerchantListContainer';
-import MerchantItemContainer from './containers/MerchantItemContainer';
+import MerchantItemEditContainer from './containers/MerchantItemEditContainer';
 
 const store = configureStore();
 const history = syncHistoryWithStore(hashHistory, store);
@@ -18,8 +18,8 @@ ReactDOM.render(
   <Provider store={ store }>
     <Router history={ history }>
       <Route path="/" component={ App }>
-        <Route path="list" query='page:id' component={ MerchantListContainer } />
-        <Route path="edit/:id" component={ MerchantItemContainer } mode='edit' />
+        <Route path="list" query='page:number' component={ MerchantListContainer } />
+        <Route path="edit/:id" component={ MerchantItemEditContainer } mode='edit' />
       </Route>
     </Router>
   </Provider>,

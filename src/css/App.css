@@ -2,6 +2,7 @@
 @import url("merchantsList.css");
 @import url("bids.css");
 @import url('buttons.css');
+@import url('pagination.css');
 
 .App {
   text-align: center;

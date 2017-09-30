@@ -1,8 +1,11 @@
-import { LOADING_MERCHANT_ITEM, RECEIVE_MERCHANTS_ITEM } from '../actions/constants';
+import {
+  LOADING_MERCHANT_ITEM,
+  RECEIVE_MERCHANTS_ITEM
+} from '../actions/constants';
 
 const defaultState = {
   loading: false,
-  item: []
+  item: {}
 };
 
 export default (state = defaultState, action) => {

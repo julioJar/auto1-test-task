@@ -1,36 +1,11 @@
-import _ from 'lodash';
-
-import { RECEIVE_MERCHANTS_LIST, LOADING_MERCHANT_LIST, LOADING_MERCHANT_ITEM, RECEIVE_MERCHANTS_ITEM } from './constants';
-import { listOfMerchantsMock } from '../APIMock';
-
-const timeOutFetchSimulation = 1000;
-
-export const fetchListOfMerchants = (pageSize, page) => {
-  // resolving the pagination here
-  return new Promise((resolve) => {
-    const initOffset = pageSize * (page - 1);
-    const endOffset = initOffset + pageSize;
-
-    setTimeout(() => {
-      const listLength = listOfMerchantsMock.length;
-      const paginatedListOfMerchants = _.filter(listOfMerchantsMock, (item, index) => {
-        return index >= initOffset && index < endOffset;
-      });
-      resolve({ paginatedListOfMerchants, listLength });
-    }, timeOutFetchSimulation);
-  });
-};
-
-export const fetchMerchantItem = (id) => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      const [merchantItem] = _.filter(listOfMerchantsMock, (item) => {
-        return id === item.id;
-      });
-      resolve(merchantItem);
-    }, timeOutFetchSimulation);
-  });
-};
+import { fetchListOfMerchants, fetchMerchantItem, deleteMerchantItem } from '../APIMock/serverActions';
+import {
+  RECEIVE_MERCHANTS_LIST,
+  LOADING_MERCHANT_LIST,
+  LOADING_MERCHANT_ITEM,
+  RECEIVE_MERCHANTS_ITEM,
+  DELETE_MERCHANT_ITEM
+} from './constants';
 
 export const loadingListAction = () => ({
   type: LOADING_MERCHANT_LIST
@@ -40,6 +15,11 @@ export const receiveListAction = (merchansList, listLength) => ({
   type: RECEIVE_MERCHANTS_LIST,
   merchansList,
   listLength
+});
+
+export const removeItemAction = id => ({
+  type: DELETE_MERCHANT_ITEM,
+  id
 });
 
 export const loadingItemAction = () => ({
@@ -63,4 +43,9 @@ export const fetchMerchantItemAction = id => (dispatch) => {
   fetchMerchantItem(id).then((merchantItem) => {
     dispatch(receiveItemAction(merchantItem));
   });
+};
+
+export const removeMerchantItem = id => (dispatch) => {
+  deleteMerchantItem(id);
+  dispatch(removeItemAction(id));
 };

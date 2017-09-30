@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { fetchMerchantItemAction } from '../actions';
-import MerchantItem from '../components/MerchantItem';
+import MerchantItemEdit from '../components/MerchantItemEdit';
 
 class MerchantListContainer extends Component {
   componentDidMount() {
@@ -18,7 +18,7 @@ class MerchantListContainer extends Component {
     const { merchantItemData } = this.props;
 
     return (
-      <MerchantItem merchantItem={ merchantItemData } />
+      <MerchantItemEdit merchantItem={ merchantItemData } />
     );
   }
 }

@@ -19,5 +19,12 @@ export default StyleSheet.create({
     },
     "li": {
         "listStyle": "none"
+    },
+    "input": {
+        "paddingTop": 5,
+        "paddingRight": 5,
+        "paddingBottom": 5,
+        "paddingLeft": 5,
+        "borderRadius": 5
     }
 });

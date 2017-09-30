@@ -25,7 +25,7 @@ class MerchantItem extends Component {
   }
 
   render() {
-    const { merchantItem, editAction } = this.props;
+    const { merchantItem, editAction, removeItemAction } = this.props;
     const {
       id,
       avatar_url,
@@ -49,7 +49,8 @@ class MerchantItem extends Component {
             <a>{ email }</a>
             <a>{ phone }</a>
           </div>
-          <button onClick={() => editAction(id)}  className='edit_btn'>Edit</button>
+          <button onClick={() => editAction(id)}  className='btn edit'>Edit</button>
+          <button onClick={() => removeItemAction(id)} className='btn edit'>delete</button>
         </div>
         <div className='table'>
           <div className='row header'>
@@ -73,6 +74,7 @@ class MerchantItem extends Component {
 MerchantItem.propTypes = {
   merchantItem: PropTypes.objectOf(PropTypes.any).isRequired,
   editAction: PropTypes.func.isRequired,
+  removeItemAction: PropTypes.func.isRequired
 };
 
 export default MerchantItem;

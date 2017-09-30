@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import _ from 'lodash';
 import { hashHistory } from 'react-router';
 
-import { fetchListOfMerchantsAction } from '../actions';
+import { fetchListOfMerchantsAction, removeMerchantItem } from '../actions';
 import MerchantItemContainer from './MerchantItemContainer';
 import loader from '../assets/loader.gif';
 import Pagination from '../components/Pagination';
@@ -21,7 +21,7 @@ class MerchantListContainer extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    const {  page } = this.props;
+    const { page } = this.props;
     const nextPage = nextProps.page;
     const { dispatchFetchListOfMerchantsAction } = nextProps;
 
@@ -33,7 +33,11 @@ class MerchantListContainer extends Component {
   _renderListOfMerchants(merchantsListData) {
     return merchantsListData && _.map(merchantsListData, (merchantItem) => {
       return (
-        <MerchantItemContainer key={ merchantItem.id } merchantItem={ merchantItem } />
+        <MerchantItemContainer
+          key={ merchantItem.id }
+          merchantItem={ merchantItem }
+          removeItemAction={ this._removeMerchanItemAction }
+        />
       );
     });
   }
@@ -41,6 +45,12 @@ class MerchantListContainer extends Component {
   _paginationAction = (page) => {
     hashHistory.push(`/list?page=${page}`);
   };
+
+  _removeMerchanItemAction = (id) => {
+    const { dispatchRemoveMerchantItem } = this.props;
+
+    dispatchRemoveMerchantItem(id);
+  }
 
   render() {
     const { merchantsList, loading, listLength, page } = this.props;
@@ -78,7 +88,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
-    dispatchFetchListOfMerchantsAction: fetchListOfMerchantsAction
+    dispatchFetchListOfMerchantsAction: fetchListOfMerchantsAction,
+    dispatchRemoveMerchantItem: removeMerchantItem
   }, dispatch);
 };
 
@@ -89,6 +100,7 @@ MerchantListContainer.defaultProps = {
 
 MerchantListContainer.propTypes = {
   dispatchFetchListOfMerchantsAction: PropTypes.func.isRequired,
+  dispatchRemoveMerchantItem: PropTypes.func.isRequired,
   page: PropTypes.number,
   merchantsList: PropTypes.arrayOf(PropTypes.any),
   loading: PropTypes.bool.isRequired,

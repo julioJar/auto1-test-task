@@ -10,10 +10,14 @@ class MerchantItemContainer extends Component {
   };
 
   render() {
-    const { merchantItem } = this.props;
+    const { merchantItem, removeItemAction } = this.props;
 
     return (
-      <MerchantItem merchantItem={ merchantItem } editAction={ this._editClickAction } />
+      <MerchantItem
+        merchantItem={ merchantItem }
+        editAction={ this._editClickAction }
+        removeItemAction={ removeItemAction }
+      />
     );
   }
 }
@@ -25,7 +29,9 @@ MerchantItemContainer.defaultProps = {
 };
 
 MerchantItemContainer.propTypes = {
-  merchantItem: PropTypes.objectOf(PropTypes.any)
+  merchantItem: PropTypes.objectOf(PropTypes.any),
+  removeItemAction: PropTypes.func.isRequired
 };
+
 
 export default MerchantItemContainer;

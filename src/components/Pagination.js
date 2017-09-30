@@ -6,7 +6,7 @@ import _ from 'lodash';
 class Pagination extends Component {
   _renderPaginationNumbers(pageSize, listLength, page) {
     const { paginationAction } = this.props;
-    const iterations = listLength / pageSize;
+    const iterations = Math.ceil(listLength / pageSize);
     let items = [];
 
     _.times(iterations, (index) => {

@@ -14,6 +14,7 @@ class App extends Component {
           <h2>Welcome</h2>
         </div>
         <h3>Check the <Link to='/list'>Merchants List</Link></h3>
+        <h3>or <Link to='/add'> Add a new one</Link></h3>
         { this.props.children }
       </div>
     );

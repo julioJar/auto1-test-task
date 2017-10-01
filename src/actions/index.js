@@ -1,4 +1,4 @@
-import { fetchListOfMerchants, fetchMerchantItem, deleteMerchantItem } from '../APIMock/serverActions';
+import { fetchListOfMerchants, fetchMerchantItem, deleteMerchantItem  } from '../APIMock/serverActions';
 import {
   RECEIVE_MERCHANTS_LIST,
   LOADING_MERCHANT_LIST,

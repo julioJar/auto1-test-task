@@ -15,16 +15,22 @@ export default StyleSheet.create({
         "borderRadius": 5,
         "cursor": "pointer",
         "border": "none",
-        "boxShadow": "0px 3px 0px #3D8C72",
         "textAlign": "center",
         "lineHeight": 50,
         "textDecoration": "none",
         "fontWeight": "bold"
     },
     "btnedit": {
-        "backgroundColor": "#69A551"
+        "backgroundColor": "#1B4691"
     },
     "btnsave": {
-        "backgroundColor": "#69A551"
+        "backgroundColor": "#69A551",
+        "boxShadow": "0px 3px 0px #3D8C72"
+    },
+    "btndelete": {
+        "backgroundColor": "#ea6153"
+    },
+    "btnreset": {
+        "backgroundColor": "#ea6153"
     }
 });

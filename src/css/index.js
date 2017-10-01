@@ -15,16 +15,31 @@ export default StyleSheet.create({
         "paddingRight": 0,
         "paddingBottom": 0,
         "paddingLeft": 0,
-        "fontFamily": "sans-serif"
+        "fontFamily": "sans-serif",
+        "fontSize": 12
     },
     "li": {
         "listStyle": "none"
+    },
+    "h1": {
+        "fontSize": 3
+    },
+    "h2": {
+        "fontSize": 2.5
+    },
+    "h3": {
+        "fontSize": 2
+    },
+    "h4": {
+        "fontSize": 1.5
     },
     "input": {
         "paddingTop": 5,
         "paddingRight": 5,
         "paddingBottom": 5,
         "paddingLeft": 5,
-        "borderRadius": 5
+        "borderRadius": 5,
+        "textAlign": "center",
+        "fontSize": 1.5
     }
 });

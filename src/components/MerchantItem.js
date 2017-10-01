@@ -50,7 +50,7 @@ class MerchantItem extends Component {
             <a>{ phone }</a>
           </div>
           <button onClick={() => editAction(id)}  className='btn edit'>Edit</button>
-          <button onClick={() => removeItemAction(id)} className='btn edit'>delete</button>
+          <button onClick={() => removeItemAction(id)} className='btn delete'>delete</button>
         </div>
         <div className='table'>
           <div className='row header'>

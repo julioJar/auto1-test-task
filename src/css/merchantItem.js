@@ -55,10 +55,14 @@ export default StyleSheet.create({
         "maxHeight": 120,
         "marginRight": 20
     },
+    "edition merchant_item_image": {
+        "marginRight": 0
+    },
     "merchant_item_info": {
         "display": "flex",
         "flexDirection": "column",
-        "alignItems": "flex-start"
+        "alignItems": "flex-start",
+        "maxWidth": "100%"
     },
     "merchant_item_info h3": {
         "fontSize": 2.5,
@@ -73,6 +77,45 @@ export default StyleSheet.create({
     },
     "merchant_item btn": {
         "marginLeft": "auto"
+    },
+    "merchant_item_info__hasPremium": {
+        "outline": "none",
+        "WebkitAppearance": "none",
+        "backgroundColor": "#fafafa",
+        "border": "1px solid #cacece",
+        "boxShadow": "0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05)",
+        "paddingTop": 9,
+        "paddingRight": 9,
+        "paddingBottom": 9,
+        "paddingLeft": 9,
+        "borderRadius": 50,
+        "display": "inline-block",
+        "position": "relative"
+    },
+    "merchant_item_info__hasPremium:checked:after": {
+        "content": "' '",
+        "width": 12,
+        "height": 12,
+        "borderRadius": 50,
+        "position": "absolute",
+        "top": 3,
+        "background": "#99a1a7",
+        "boxShadow": "inset 0px 0px 10px rgba(0,0,0,0.3)",
+        "textShadow": 0,
+        "left": 3,
+        "fontSize": 32
+    },
+    "merchant_item_info__hasPremium:checked": {
+        "backgroundColor": "#e9ecee",
+        "color": "#99a1a7",
+        "border": "1px solid #adb8c0",
+        "boxShadow": "0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1)"
+    },
+    "merchant_item_info__hasPremium:active": {
+        "boxShadow": "0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1)"
+    },
+    "merchant_item_info__hasPremium:checked:active": {
+        "boxShadow": "0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1)"
     },
     "hasPremium": {
         "backgroundColor": "#FFFFFF",

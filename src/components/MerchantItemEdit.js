@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import _ from 'lodash';
 
 class MerchantItemEdit extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       firstname: null,
       lastname: null,
       email: null,
-      phone: null
+      phone: null,
+      hasPremium: _.get(props, 'merchantItem.hasPremium', false)
     };
   }
 
   render() {
-    const { merchantItem, saveEditAction } = this.props;
+    const { merchantItem, action } = this.props;
     const {
       id,
       avatar_url,
@@ -24,8 +26,8 @@ class MerchantItemEdit extends Component {
       bids
     } = merchantItem;
     return (
-      <div className='merchant_item_wrapper edition'>
-        <div className='merchant_item edition'>
+      <div className={`merchant_item_wrapper edition ${this.state.hasPremium ? 'hasPremium' : ''}`}>
+        <div className='merchant_item'>
           <img className='merchant_item_image' alt='avatar' src={ avatar_url } />
           <div className='merchant_item_info'>
             <h2>First Name</h2>
@@ -55,22 +57,33 @@ class MerchantItemEdit extends Component {
               }}
               value={ this.state.email || '' }
               className='merchant_item_info__email'
-              type='text'
+              type='email'
               placeholder={ email }
             />
-            <h4>Phone</h4>
+            <h3>Phone</h3>
             <input
               onInput={(event) => {
                 this.setState({ phone: event.target.value });
               }}
               value={ this.state.phone || '' }
               className='merchant_item_info__phone'
-              type="number"
+              type="tel"
               placeholder={ phone }
             />
+            <h4>Are you premium?</h4>
+            <div>
+              <input
+                onChange={(event) => {
+                  this.setState({ hasPremium: event.target.checked });
+                }}
+                className='merchant_item_info__hasPremium'
+                checked={ this.state.hasPremium }
+                type="checkbox"
+              />
+            </div>
           </div>
         </div>
-        <button onClick={() => saveEditAction(this.state, { id, avatar_url, bids })} className='btn save'>Save</button>
+        <button onClick={() => action(this.state, { id, avatar_url, bids })} className='btn save'>Save</button>
         <button
           onClick={() => this.setState({
             fullName: null,
@@ -81,7 +94,7 @@ class MerchantItemEdit extends Component {
         >
           Reset
         </button>
-        <p>You are not able to edit your car history, these would be available in v2</p>
+        <p>You are not able to add / edit your car history, these would be available in v2</p>
       </div>
     );
   }
@@ -93,7 +106,7 @@ MerchantItemEdit.defaultProps = {
 
 MerchantItemEdit.propTypes = {
   merchantItem: PropTypes.objectOf(PropTypes.any).isRequired,
-  saveEditAction: PropTypes.func.isRequired
+  action: PropTypes.isRequired
 };
 
 export default MerchantItemEdit;

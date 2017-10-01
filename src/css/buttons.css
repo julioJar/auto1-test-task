@@ -7,7 +7,6 @@
   border-radius: 5px;
   cursor: pointer;
   border: none;
-  box-shadow: 0px 3px 0px #3D8C72;
   text-align: center;
   line-height: 50px;
   text-decoration: none;
@@ -15,9 +14,14 @@
 }
 
 .btn.edit {
-  background-color: #69A551;
+  background-color: #1B4691;
 }
 
 .btn.save {
   background-color: #69A551;
+  box-shadow: 0px 3px 0px #3D8C72;
+}
+
+.btn.delete, .btn.reset {
+  background-color: #ea6153;
 }

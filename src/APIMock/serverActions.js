@@ -21,6 +21,8 @@ export const fetchListOfMerchants = (pageSize, page) => {
   });
 };
 
+
+// get method of the server for fetching -> In this case we want mutations
 export const fetchMerchantItem = (id) => {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -32,7 +34,7 @@ export const fetchMerchantItem = (id) => {
   });
 };
 
-// Put method of the server -> In this case we want mutations
+// Put method of the server for editing -> In this case we want mutations
 export const putMerchantItem = (merchantItem) => {
   _.forEach(listOfMerchantsMock, (item, index) => {
     if (merchantItem.id === item.id) {
@@ -48,7 +50,7 @@ export const putMerchantItem = (merchantItem) => {
 };
 
 
-// delete method of the server -> In this case we want mutations
+// delete method of the server for removing -> In this case we want mutations
 export const deleteMerchantItem = (id) => {
   _.forEach(listOfMerchantsMock, (item, index) => {
     if (item && id === item.id) {
@@ -56,6 +58,17 @@ export const deleteMerchantItem = (id) => {
     }
   });
   return listOfMerchantsMock;
+};
+
+// post method of the server for adding -> In this case we want mutations
+export const addMerchantItem = (merchantItem) => {
+  listOfMerchantsMock.push(merchantItem);
+
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(listOfMerchantsMock);
+    }, timeOutFetchSimulation);
+  });
 };
 
 // Finish o the serverRequests

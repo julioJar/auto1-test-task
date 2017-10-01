@@ -18,7 +18,7 @@ ReactDOM.render(
   <Provider store={ store }>
     <Router history={ history }>
       <Route path="/" component={ App }>
-        <Route path="list" query='page:number' component={ MerchantListContainer } />
+        <Route path="list" component={ MerchantListContainer } />
         <Route path="add" component={ MerchantItemEditContainer } mode='add' />
         <Route path="edit/:id" component={ MerchantItemEditContainer } mode='edit' />
       </Route>

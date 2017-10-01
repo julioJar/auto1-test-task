@@ -11,13 +11,13 @@ import MerchantItemContainer from './MerchantItemContainer';
 import loader from '../assets/loader.gif';
 import Pagination from '../components/Pagination';
 
-const pageSize = 3;
+const pageSizeFallback = 3;
 
-class MerchantListContainer extends Component {
+export class MerchantListContainer extends Component {
   componentDidMount() {
     const { dispatchFetchListOfMerchantsAction, page } = this.props;
 
-    dispatchFetchListOfMerchantsAction(pageSize, page);
+    dispatchFetchListOfMerchantsAction(this._pageSize(), page);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -26,9 +26,16 @@ class MerchantListContainer extends Component {
     const { dispatchFetchListOfMerchantsAction } = nextProps;
 
     if (page !== nextPage) {
-      dispatchFetchListOfMerchantsAction(pageSize, nextPage);
+      dispatchFetchListOfMerchantsAction(this._pageSize(), nextPage);
     }
   }
+
+  _pageSize = () => {
+    const pageSizeQuery = _.get(this.props, 'location.query.size', null);
+    const pageSize = (pageSizeQuery && parseInt(pageSizeQuery)) || pageSizeFallback;
+
+    return pageSize;
+  };
 
   _renderListOfMerchants(merchantsListData) {
     return merchantsListData && _.map(merchantsListData, (merchantItem) => {
@@ -64,7 +71,7 @@ class MerchantListContainer extends Component {
       <ul className="merchants_list">
         { this._renderListOfMerchants(merchantsList) }
         <Pagination
-          pageSize={ pageSize }
+          pageSize={ this._pageSize() }
           listLength={ listLength }
           page={ page }
           paginationAction={ this._paginationAction }
@@ -95,7 +102,8 @@ const mapDispatchToProps = (dispatch) => {
 
 MerchantListContainer.defaultProps = {
   page: 0,
-  merchantsList: []
+  merchantsList: [],
+  loading: false
 };
 
 MerchantListContainer.propTypes = {
@@ -103,7 +111,7 @@ MerchantListContainer.propTypes = {
   dispatchRemoveMerchantItem: PropTypes.func.isRequired,
   page: PropTypes.number,
   merchantsList: PropTypes.arrayOf(PropTypes.any),
-  loading: PropTypes.bool.isRequired,
+  loading: PropTypes.bool,
   listLength: PropTypes.number.isRequired
 };
 

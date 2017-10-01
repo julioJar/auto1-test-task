@@ -1,5 +1,9 @@
-import { loadingListAction, receiveListAction } from '../../actions';
-import { listOfMerchantsMock } from '../../APIMock';
+/* global describe test expect */
+import {
+  loadingListAction,
+  receiveListAction
+} from '../../actions';
+import { listOfMerchantsMock } from '../../APIMock/dataBaseSimulation';
 import merchantsListReducer from '../../reducers/merchantsListReducer';
 
 describe('reducer for list of merchants', () => {
@@ -13,8 +17,13 @@ describe('reducer for list of merchants', () => {
   test('Merchant list arrive successfuly', () => {
     const expectedResult = {
       loading: false,
-      merchantsList: listOfMerchantsMock
+      list: listOfMerchantsMock,
+      listLength: listOfMerchantsMock.length
     };
-    expect(merchantsListReducer({}, receiveListAction(listOfMerchantsMock))).toEqual(expectedResult);
+    expect(
+      merchantsListReducer({}, receiveListAction(
+        listOfMerchantsMock, listOfMerchantsMock.length
+      ))).toEqual(expectedResult
+    );
   });
 });

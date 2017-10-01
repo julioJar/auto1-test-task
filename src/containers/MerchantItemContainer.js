@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import MerchantItem from '../components/MerchantItem';
 
-class MerchantItemContainer extends Component {
+export class MerchantItemContainer extends Component {
   _editClickAction = (id) => {
     hashHistory.push(`/edit/${id}`);
   };

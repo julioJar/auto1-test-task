@@ -10,11 +10,21 @@ import { listOfMerchantsMock } from '../../APIMock/dataBaseSimulation';
 describe('MerchantItemEdit component testing', () => {
   const props = {
     merchantItem: listOfMerchantsMock[0],
-    action: jest.fn()
+    action: jest.fn(),
+    loading: false
   };
 
+  const loadingProps = _.assign({}, props, {
+    loading: true
+  });
+
   const wrapper = shallow(<MerchantItemEdit {...props} />);
+  const loadingWrapper = shallow(<MerchantItemEdit {...loadingProps} />);
   const instance = wrapper.instance();
+
+  test('Loading is true so render the loading image', () => {
+    expect(loadingWrapper.find('.loader').length).toBeGreaterThan(0);
+  });
 
   test('Render the correct css wraper', () => {
     expect(wrapper.find('.merchant_item_wrapper.edition').length).toBeGreaterThan(0);

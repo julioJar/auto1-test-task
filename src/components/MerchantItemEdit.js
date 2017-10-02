@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 
+import loader from '../assets/loader.gif';
+
 class MerchantItemEdit extends Component {
   constructor(props) {
     super(props);
@@ -15,7 +17,7 @@ class MerchantItemEdit extends Component {
   }
 
   render() {
-    const { merchantItem, action } = this.props;
+    const { merchantItem, action, loading } = this.props;
     const {
       id,
       avatar_url,
@@ -23,8 +25,16 @@ class MerchantItemEdit extends Component {
       lastname,
       email,
       phone,
-      bids
+      bids,
+      hasPremium
     } = merchantItem;
+
+    if (loading) {
+      return (
+        <img className='loader' alt='loading gif' src={ loader } />
+      );
+    }
+
     return (
       <div className={`merchant_item_wrapper edition ${this.state.hasPremium ? 'hasPremium' : ''}`}>
         <div className='merchant_item'>
@@ -52,7 +62,7 @@ class MerchantItemEdit extends Component {
               type='text'
               placeholder={ lastname }
             />
-            <h3>email</h3>
+            <h3>Email</h3>
             <input
               onInput={(event) => {
                 this.setState({ email: event.target.value });
@@ -91,9 +101,11 @@ class MerchantItemEdit extends Component {
         <button onClick={() => action(this.state, { id, avatar_url, bids })} className='btn save'>Save</button>
         <button
           onClick={() => this.setState({
-            fullName: null,
+            firstname: null,
+            lastname: null,
             email: null,
-            phone: null
+            phone: null,
+            hasPremium
           })}
           className='btn reset'
         >
@@ -106,12 +118,14 @@ class MerchantItemEdit extends Component {
 }
 
 MerchantItemEdit.defaultProps = {
-  children: null
+  children: null,
+  loading: false
 };
 
 MerchantItemEdit.propTypes = {
   merchantItem: PropTypes.objectOf(PropTypes.any).isRequired,
-  action: PropTypes.isRequired
+  action: PropTypes.func.isRequired,
+  loading: PropTypes.bool
 };
 
 export default MerchantItemEdit;

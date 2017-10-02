@@ -24,6 +24,31 @@ export class MerchantItem extends Component {
     });
   }
 
+  _renderBidsTable(bids) {
+    if (bids.length) {
+      return (
+        <div className='table'>
+          <div className='row header'>
+            <div className='cell'>
+              Car title
+            </div>
+            <div className='cell'>
+              Ammount
+            </div>
+            <div className='cell'>
+              Created
+            </div>
+          </div>
+          { this._renderListOfBids(bids) }
+        </div>
+      );
+    }
+
+    return (
+      <p>There is no Bids history</p>
+    );
+  }
+
   render() {
     const { merchantItem, editAction, removeItemAction } = this.props;
     const {
@@ -49,23 +74,12 @@ export class MerchantItem extends Component {
             <a>{ email }</a>
             <a>{ phone }</a>
           </div>
-          <button onClick={() => editAction(id)}  className='btn edit'>Edit</button>
-          <button onClick={() => removeItemAction(id)} className='btn delete'>delete</button>
-        </div>
-        <div className='table'>
-          <div className='row header'>
-            <div className='cell'>
-              Car title
-            </div>
-            <div className='cell'>
-              Ammount
-            </div>
-            <div className='cell'>
-              Created
-            </div>
+          <div className='merchant_item_buttonContainer'>
+            <button onClick={() => editAction(id)}  className='btn edit'>Edit</button>
+            <button onClick={() => removeItemAction(id)} className='btn delete'>delete</button>
           </div>
-          { this._renderListOfBids(bids) }
         </div>
+        { this._renderBidsTable(bids) }
       </li>
     );
   }

@@ -44,7 +44,7 @@ export class MerchantItemEditContainer extends Component {
   };
 
   render() {
-    const { merchantItemData } = this.props;
+    const { merchantItemData, loading } = this.props;
     const { mode } = this.props.route;
     if (mode === 'add') {
       const newItemData = {
@@ -61,6 +61,7 @@ export class MerchantItemEditContainer extends Component {
     }
     return (
       <MerchantItemEdit
+        loading={ loading }
         merchantItem={ merchantItemData }
         action={ this._saveEditAction }
       />
@@ -74,6 +75,7 @@ const mapStateToProps = (state) => {
 
   return {
     merchantItemId,
+    loading: _.get(state, 'merchantItem.loading', {}),
     page: _.get(state, 'merchantItem.page', {}),
     merchantItemData: _.get(state, 'merchantItem.item', {})
   };
@@ -87,13 +89,15 @@ const mapDispatchToProps = (dispatch) => {
 
 MerchantItemEditContainer.defaultProps = {
   merchantItemData: {},
-  merchantItemId: null
+  merchantItemId: null,
+  loading: false
 };
 
 MerchantItemEditContainer.propTypes = {
   merchantItemData: PropTypes.objectOf(PropTypes.any),
   dispatchFetchMerchantItemAction: PropTypes.func.isRequired,
   merchantItemId: PropTypes.string,
+  loading: PropTypes.bool,
   route: PropTypes.objectOf(PropTypes.any).isRequired
 };
 

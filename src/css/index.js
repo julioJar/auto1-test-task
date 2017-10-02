@@ -22,15 +22,35 @@ export default StyleSheet.create({
         "listStyle": "none"
     },
     "h1": {
+        "lineHeight": 1,
+        "marginTop": 5,
+        "marginRight": 0,
+        "marginBottom": 5,
+        "marginLeft": 0,
         "fontSize": 3
     },
     "h2": {
+        "lineHeight": 1,
+        "marginTop": 5,
+        "marginRight": 0,
+        "marginBottom": 5,
+        "marginLeft": 0,
         "fontSize": 2.5
     },
     "h3": {
+        "lineHeight": 1,
+        "marginTop": 5,
+        "marginRight": 0,
+        "marginBottom": 5,
+        "marginLeft": 0,
         "fontSize": 2
     },
     "h4": {
+        "lineHeight": 1,
+        "marginTop": 5,
+        "marginRight": 0,
+        "marginBottom": 5,
+        "marginLeft": 0,
         "fontSize": 1.5
     },
     "input": {

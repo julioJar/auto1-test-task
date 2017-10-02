@@ -56,6 +56,7 @@ export default StyleSheet.create({
         "marginRight": 20
     },
     "edition merchant_item_image": {
+        "marginBottom": 10,
         "marginRight": 0
     },
     "merchant_item_info": {
@@ -64,19 +65,16 @@ export default StyleSheet.create({
         "alignItems": "flex-start",
         "maxWidth": "100%"
     },
-    "merchant_item_info h3": {
-        "fontSize": 2.5,
-        "lineHeight": 1,
-        "marginTop": 5,
-        "marginRight": 0,
-        "marginBottom": 5,
-        "marginLeft": 0
-    },
     "merchant_item_info merchant_item_info__name": {
         "fontSize": 2.5
     },
-    "merchant_item btn": {
+    "merchant_item_buttonContainer": {
+        "display": "flex",
+        "flexDirection": "column",
         "marginLeft": "auto"
+    },
+    "merchant_item_buttonContainer btn": {
+        "marginTop": 5
     },
     "merchant_item_info__hasPremium": {
         "outline": "none",

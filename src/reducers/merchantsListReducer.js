@@ -1,6 +1,5 @@
 import _ from 'lodash';
 import { LOADING_MERCHANT_LIST, RECEIVE_MERCHANTS_LIST, DELETE_MERCHANT_ITEM } from '../actions/constants';
-import { deepCopy } from '../utils/deepCopy';
 
 const defaultState = {
   loading: false,
@@ -21,16 +20,16 @@ export default (state = defaultState, action) => {
         listLength: action.listLength
       });
     case DELETE_MERCHANT_ITEM:
-      const listCopy = deepCopy(state.list);
+      const listCopy = _.cloneDeep(state.list);
       const list = _.filter(listCopy, (item) => {
         return item.id !== action.id;
       });
       const listLength = state.listLength - 1;
 
-      return _.assign({}, state, {
+      return  {
         list, // this is a complete new object
         listLength
-      });
+      };
     default:
       return state;
   }

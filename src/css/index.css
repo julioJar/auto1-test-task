@@ -9,6 +9,11 @@ li {
   list-style: none;
 }
 
+h1, h2, h3, h4 {
+  line-height: 1;
+  margin: 5px 0;
+}
+
 
 h1 {
   font-size: 3em;

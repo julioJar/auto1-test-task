@@ -13,6 +13,7 @@ describe('MerchantItemEditContainer testing', () => {
     dispatchFetchMerchantItemAction: jest.fn(),
     merchantItemId: listOfMerchantsMock[0].id,
     page: 1,
+    loading: false,
     route: {
       mode: 'edition'
     }

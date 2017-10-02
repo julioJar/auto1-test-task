@@ -11,9 +11,10 @@ import { fetchMerchantItemAction } from '../actions';
 import MerchantItemEdit from '../components/MerchantItemEdit';
 import { putMerchantItem, addMerchantItem } from '../APIMock/serverActions';
 
-class MerchantItemEditContainer extends Component {
+export class MerchantItemEditContainer extends Component {
   componentDidMount() {
     const { merchantItemId, dispatchFetchMerchantItemAction } = this.props;
+
     this.newItemid = uuidv4();
     dispatchFetchMerchantItemAction(merchantItemId);
   }
@@ -36,6 +37,7 @@ class MerchantItemEditContainer extends Component {
       avatar_url,
       bids
     });
+
     addMerchantItem(addMerchantItemObject).then(() => {
       hashHistory.push('/list');
     });

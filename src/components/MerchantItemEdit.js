@@ -35,6 +35,7 @@ class MerchantItemEdit extends Component {
               onInput={(event) => {
                 this.setState({ firstname: event.target.value });
               }}
+              id='firstname'
               value={ this.state.firstname || ''}
               className='merchant_item_info__name'
               type='text'
@@ -45,6 +46,7 @@ class MerchantItemEdit extends Component {
               onInput={(event) => {
                 this.setState({ lastname: event.target.value });
               }}
+              id='lastname'
               value={ this.state.lastname || ''}
               className='merchant_item_info__name'
               type='text'
@@ -55,6 +57,7 @@ class MerchantItemEdit extends Component {
               onInput={(event) => {
                 this.setState({ email: event.target.value });
               }}
+              id='email'
               value={ this.state.email || '' }
               className='merchant_item_info__email'
               type='email'
@@ -62,6 +65,7 @@ class MerchantItemEdit extends Component {
             />
             <h3>Phone</h3>
             <input
+              id='phone'
               onInput={(event) => {
                 this.setState({ phone: event.target.value });
               }}
@@ -76,6 +80,7 @@ class MerchantItemEdit extends Component {
                 onChange={(event) => {
                   this.setState({ hasPremium: event.target.checked });
                 }}
+                id='hasPremium'
                 className='merchant_item_info__hasPremium'
                 checked={ this.state.hasPremium }
                 type="checkbox"

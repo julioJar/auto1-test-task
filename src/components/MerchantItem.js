@@ -5,11 +5,11 @@ import moment from 'moment';
 
 import currencyFormatter from '../utils/currencyFormatter';
 
-class MerchantItem extends Component {
+export class MerchantItem extends Component {
   _renderListOfBids(bids) {
     return bids && _.map(bids, (bid) => {
       return (
-        <div key={ bid.id } className='row'>
+        <div key={ bid.id } className='row bidItem'>
           <div className='cell'>
             { bid.carTitle }
           </div>

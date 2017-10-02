@@ -10,6 +10,9 @@ describe('MerchantListContainer container testing', () => {
   const props = {
     dispatchFetchListOfMerchantsAction: jest.fn(),
     dispatchRemoveMerchantItem: jest.fn(),
+    dispatchSortItemsByName: jest.fn(),
+    dispatchSortItemsByAmount: jest.fn(),
+    dispatchSortItemsByDate: jest.fn(),
     page: 1,
     merchantsList: [listOfMerchantsMock[0], listOfMerchantsMock[1], listOfMerchantsMock[2]],
     listLength: listOfMerchantsMock.length

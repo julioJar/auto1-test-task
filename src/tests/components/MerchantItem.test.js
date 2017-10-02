@@ -11,7 +11,10 @@ describe('MerchantItem component testing', () => {
   const props = {
     merchantItem: listOfMerchantsMock[0],
     editAction: jest.fn(),
-    removeItemAction: jest.fn()
+    removeItemAction: jest.fn(),
+    sortBidsByName: jest.fn(),
+    sortBidsByAmount: jest.fn(),
+    sortBidsByDate: jest.fn()
   };
 
   const HasPremiumFalseProps = _.assign({}, props, {

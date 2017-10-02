@@ -9,7 +9,10 @@ import { MerchantItemContainer } from '../../containers/MerchantItemContainer';
 describe('MerchantItemContainer testing', () => {
   const props = {
     merchantItem: listOfMerchantsMock[0],
-    removeItemAction: jest.fn()
+    removeItemAction: jest.fn(),
+    sortBidsByName: jest.fn(),
+    sortBidsByAmount: jest.fn(),
+    sortBidsByDate: jest.fn()
   };
   const wrapper = shallow(<MerchantItemContainer {...props} />);
   const instance = wrapper.instance();

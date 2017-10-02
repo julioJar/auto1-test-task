@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import _ from 'lodash';
 import { hashHistory } from 'react-router';
 
-import { fetchListOfMerchantsAction, removeMerchantItem } from '../actions';
+import { fetchListOfMerchantsAction, removeMerchantItem, sortItemsByName, sortItemsByAmount, sortItemsByDate } from '../actions';
 import MerchantItemContainer from './MerchantItemContainer';
 import loader from '../assets/loader.gif';
 import Pagination from '../components/Pagination';
@@ -37,10 +37,31 @@ export class MerchantListContainer extends Component {
     return pageSize;
   };
 
+  _sortBidsByName = (id) => {
+    const { dispatchSortItemsByName } = this.props;
+
+    dispatchSortItemsByName(id);
+  };
+
+  _sortBidsByAmount = (id) => {
+    const { dispatchSortItemsByAmount } = this.props;
+
+    dispatchSortItemsByAmount(id);
+  };
+
+  _sortBidsByDate = (id) => {
+    const { dispatchSortItemsByDate } = this.props;
+
+    dispatchSortItemsByDate(id);
+  };
+
   _renderListOfMerchants(merchantsListData) {
     return merchantsListData && _.map(merchantsListData, (merchantItem) => {
       return (
         <MerchantItemContainer
+          sortBidsByName={ this._sortBidsByName }
+          sortBidsByAmount={ this._sortBidsByAmount }
+          sortBidsByDate={ this._sortBidsByDate }
           key={ merchantItem.id }
           merchantItem={ merchantItem }
           removeItemAction={ this._removeMerchanItemAction }
@@ -96,7 +117,10 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
     dispatchFetchListOfMerchantsAction: fetchListOfMerchantsAction,
-    dispatchRemoveMerchantItem: removeMerchantItem
+    dispatchSortItemsByAmount: sortItemsByAmount,
+    dispatchSortItemsByDate: sortItemsByDate,
+    dispatchRemoveMerchantItem: removeMerchantItem,
+    dispatchSortItemsByName: sortItemsByName
   }, dispatch);
 };
 
@@ -108,7 +132,10 @@ MerchantListContainer.defaultProps = {
 
 MerchantListContainer.propTypes = {
   dispatchFetchListOfMerchantsAction: PropTypes.func.isRequired,
+  dispatchSortItemsByName: PropTypes.func.isRequired,
+  dispatchSortItemsByAmount: PropTypes.func.isRequired,
   dispatchRemoveMerchantItem: PropTypes.func.isRequired,
+  dispatchSortItemsByDate: PropTypes.func.isRequired,
   page: PropTypes.number,
   merchantsList: PropTypes.arrayOf(PropTypes.any),
   loading: PropTypes.bool,

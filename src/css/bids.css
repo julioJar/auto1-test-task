@@ -13,6 +13,11 @@
   }
 }
 
+.table a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .row {
   display: table-row;
   background: #f6f6f6;

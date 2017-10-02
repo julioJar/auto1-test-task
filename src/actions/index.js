@@ -4,7 +4,10 @@ import {
   LOADING_MERCHANT_LIST,
   LOADING_MERCHANT_ITEM,
   RECEIVE_MERCHANTS_ITEM,
-  DELETE_MERCHANT_ITEM
+  DELETE_MERCHANT_ITEM,
+  SORT_LIST_BY_NAME,
+  SORT_LIST_BY_AMOUNT,
+  SORT_LIST_BY_DATE
 } from './constants';
 
 export const loadingListAction = () => ({
@@ -49,3 +52,18 @@ export const removeMerchantItem = id => (dispatch) => {
   deleteMerchantItem(id);
   dispatch(removeItemAction(id));
 };
+
+export const sortItemsByName = id => ({
+  type: SORT_LIST_BY_NAME,
+  id
+});
+
+export const sortItemsByAmount = id => ({
+  type: SORT_LIST_BY_AMOUNT,
+  id
+});
+
+export const sortItemsByDate = id => ({
+  type: SORT_LIST_BY_DATE,
+  id
+});

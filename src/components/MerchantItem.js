@@ -25,18 +25,21 @@ export class MerchantItem extends Component {
   }
 
   _renderBidsTable(bids) {
+    const { sortBidsByName, merchantItem, sortBidsByAmount, sortBidsByDate } = this.props;
+    const { id } = merchantItem;
+
     if (bids.length) {
       return (
         <div className='table'>
           <div className='row header'>
             <div className='cell'>
-              Car title
+              <a role='button' tabIndex='0' onClick={ () => sortBidsByName(id)}>Car title</a>
             </div>
             <div className='cell'>
-              Ammount
+              <a role='button' tabIndex='0' onClick={() => sortBidsByAmount(id)}>Ammount </a>
             </div>
             <div className='cell'>
-              Created
+              <a role='button' tabIndex='0' onClick={() => sortBidsByDate(id)}>Created</a>
             </div>
           </div>
           { this._renderListOfBids(bids) }
@@ -88,7 +91,10 @@ export class MerchantItem extends Component {
 MerchantItem.propTypes = {
   merchantItem: PropTypes.objectOf(PropTypes.any).isRequired,
   editAction: PropTypes.func.isRequired,
-  removeItemAction: PropTypes.func.isRequired
+  removeItemAction: PropTypes.func.isRequired,
+  sortBidsByName: PropTypes.func.isRequired,
+  sortBidsByAmount: PropTypes.func.isRequired,
+  sortBidsByDate: PropTypes.func.isRequired
 };
 
 export default MerchantItem;

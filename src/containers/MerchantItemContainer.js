@@ -10,10 +10,19 @@ export class MerchantItemContainer extends Component {
   };
 
   render() {
-    const { merchantItem, removeItemAction } = this.props;
+    const {
+      merchantItem,
+      removeItemAction,
+      sortBidsByName,
+      sortBidsByAmount,
+      sortBidsByDate
+    } = this.props;
 
     return (
       <MerchantItem
+        sortBidsByDate={ sortBidsByDate }
+        sortBidsByName={ sortBidsByName }
+        sortBidsByAmount={ sortBidsByAmount }
         merchantItem={ merchantItem }
         editAction={ this._editClickAction }
         removeItemAction={ removeItemAction }
@@ -30,7 +39,10 @@ MerchantItemContainer.defaultProps = {
 
 MerchantItemContainer.propTypes = {
   merchantItem: PropTypes.objectOf(PropTypes.any),
-  removeItemAction: PropTypes.func.isRequired
+  removeItemAction: PropTypes.func.isRequired,
+  sortBidsByName: PropTypes.func.isRequired,
+  sortBidsByAmount: PropTypes.func.isRequired,
+  sortBidsByDate: PropTypes.func.isRequired
 };
 
 
